@@ -1,0 +1,7 @@
+MSH|^~\&|RSERVER|Sectra|SEL|14|20140422100809||ORM^O01|49842910|P|2.3
+PID|1|4342444^^^Shields MRI - Dartmouth&14&L^^Shields MRI - Dartmouth&14&L|4342444^^^Shields MRI - Dartmouth&14&L^^Shields MRI - Dartmouth&14&L~10659785^^^xx - Cape Cod Hospital&92&L^^xx - Cape Cod Hospital&92&L|4342444|Souza^Dana||19630608|M|||438 County St^^Fall River^MA^02723^US|US|508-679-4896||||||014-56-1251
+PV1|1|O|18^Dart GE HD 1.5^14^Shields MRI - Dartmouth|||||076121A^Gorski^Allison L^^MD^^Anesthesiology^P|076121A^Gorski^Allison L^^MD~S1616900^Lussier^Jennifer C^^PA||||||||||||||||||||||||||||||14|||||201404221110|201404221140
+PV2|||||||||||||ROUT^Routine^^^^^^^Shields MRI - Dartmouth&14&L^^^^^Shields MRI - Dartmouth&14&L
+GT1|1||Souza^Dana||438 County St^^Fall River^MA^02723^US|508-679-4896||19630608|M|||014-56-1251
+ORC|SC|4342444.1|4342444.1||IP||^^M30^201404221110^201404221140^R||201402251629|^Thibault^Heather||076121A^Gorski^Allison L^^MD||774-206-4090|201404221110|^Insurance issues|14^Shields MRI - Dartmouth|16^Patient arrived and ready for tech
+OBR|1|4342444.1|4342444.1|276^Lumbar Spine (C-) CPT 72148^L^DARTGEMR02^AE_Title^L|R|201402251629|201404221110|201404221140||76121^1912993478|||HX MILD DDD WITH INCREASED PAIN - LUMBAR PAIN||NEURO|076121A^Gorski^Allison L^^MD|774-206-4090|||||||MR|||^^M30^201404221110^201404221140^R|||I|Non-Contrast Exam^^HX MILD DDD WITH INCREASED PAIN - LUMBAR PAIN|||||201404221110

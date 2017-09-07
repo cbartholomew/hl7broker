@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ReadingRadPooledUser]
+    WITH PASSWORD = N'sn!dOyuwaPcc|tahypqB{QcZmsFT7_&#$!~<zdIUtDczkv^|', SID = 0xC67F1FE12C55654FB70E2BB84F1B52F8, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

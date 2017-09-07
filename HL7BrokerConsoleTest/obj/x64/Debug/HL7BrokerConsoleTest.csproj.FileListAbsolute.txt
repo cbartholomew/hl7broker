@@ -1,0 +1,8 @@
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\x64\Debug\HL7BrokerConsoleTest.exe.config
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\x64\Debug\HL7BrokerConsoleTest.exe
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\x64\Debug\HL7BrokerConsoleTest.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\x64\Debug\HL7BrokerSuite.dll
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\x64\Debug\HL7BrokerSuite.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\obj\x64\Debug\HL7BrokerConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\obj\x64\Debug\HL7BrokerConsoleTest.exe
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\obj\x64\Debug\HL7BrokerConsoleTest.pdb

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://shcappprod.shc.shcnet.pri/WSShieldsApps/ShieldsApps.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WSShieldsApps" />
+  <xs:element name="GetPatientByPatientId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientByPatientIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetPatientByPatientIdResult" nillable="true" type="q1:Patient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdatePatient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="patient" nillable="true" type="q2:Patient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdatePatientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdatePatientResult" type="xs:int" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q3:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRadiologists">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRadiologistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetAllRadiologistsResult" nillable="true" type="q4:ArrayOfDoctor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateDoctor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="doctor" nillable="true" type="q5:Doctor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateDoctorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdateDoctorResult" type="xs:int" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q6:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsByDoctorId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsByDoctorIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetLocationsByDoctorIdResult" nillable="true" type="q7:ArrayOfLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDoctorsByLocationId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="locationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDoctorsByLocationIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetDoctorsByLocationIdResult" nillable="true" type="q8:ArrayOfDoctor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithDoctorsByDoctorId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithDoctorsByDoctorIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetLocationsWithDoctorsByDoctorIdResult" nillable="true" type="q9:ArrayOfLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDoctorIntoLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" type="xs:int" />
+        <xs:element minOccurs="0" name="locationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDoctorIntoLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertDoctorIntoLocationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="location" nillable="true" type="q10:Location" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLocationResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLocationIntoPractice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="locationId" type="xs:int" />
+        <xs:element minOccurs="0" name="practiceId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLocationIntoPracticeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLocationIntoPracticeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamByExamId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="examId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamByExamIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetExamByExamIdResult" nillable="true" type="q11:Exam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamByAccessionNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accessionNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamByAccessionNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetExamByAccessionNoResult" nillable="true" type="q12:Exam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamsByDoctorIdAndLocationId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="locationId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamsByDoctorIdAndLocationIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetExamsByDoctorIdAndLocationIdResult" nillable="true" type="q13:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamsByDoctorIdAndPracticeId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="doctorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="practiceId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamsByDoctorIdAndPracticeIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetExamsByDoctorIdAndPracticeIdResult" nillable="true" type="q14:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnlinkedExamsFromLocations">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnlinkedExamsFromLocationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetUnlinkedExamsFromLocationsResult" nillable="true" type="q15:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetupSelLinks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" type="xs:int" />
+        <xs:element minOccurs="0" name="locationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetupSelLinksResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="examCodeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enterpriseId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertExamCodeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamSide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="examSideName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enterpriseId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamSideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertExamSideResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="examStatusName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enterpriseId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertExamStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="examTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enterpriseId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertExamTypeResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateExam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="exam" nillable="true" type="q16:Exam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateExamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdateExamResult" type="xs:int" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q17:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamByHl7">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="exam" nillable="true" type="q18:Exam" />
+        <xs:element minOccurs="0" name="enterpriseId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamByHl7Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertExamByHl7Result" type="xs:int" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q19:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateOrganization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="organization" nillable="true" type="q20:Organization" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdateOrganizationResult" type="xs:int" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q21:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportByExamId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="examId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportByExamIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetReportByExamIdResult" nillable="true" type="q22:Report" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="report" nillable="true" type="q23:Report" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertReportResult" type="xs:int" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q24:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreferencesByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreferencesByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetPreferencesByUserIdResult" nillable="true" type="q25:Preferences" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdatePreferencesByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="preference" nillable="true" type="q26:Preferences" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdatePreferencesByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdatePreferencesByUserIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPracticesByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPracticesByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetPracticesByUserIdResult" nillable="true" type="q27:ArrayOfPractice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDoctorsByPracticeId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="practiceId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDoctorsByPracticeIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetDoctorsByPracticeIdResult" nillable="true" type="q28:ArrayOfDoctor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPracticesWithDoctorsByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPracticesWithDoctorsByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetPracticesWithDoctorsByUserIdResult" nillable="true" type="q29:ArrayOfPractice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdatePractice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="practiceName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="practiceId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdatePracticeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdatePracticeResult" type="xs:int" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="message" type="q30:ENUM.MESSAGE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserIntoPractice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="practiceId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserIntoPracticeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUserIntoPracticeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDoctorIntoPractice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" type="xs:int" />
+        <xs:element minOccurs="0" name="practiceId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertDoctorIntoPracticeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertDoctorIntoPracticeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSharedExamsByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSharedExamsByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetSharedExamsByUserIdResult" nillable="true" type="q31:ArrayOfShare" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersYouRecentlySharedWith">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersYouRecentlySharedWithResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetUsersYouRecentlySharedWithResult" nillable="true" type="q32:ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateSharedExam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="sharedExam" nillable="true" type="q33:Share" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateSharedExamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdateSharedExamResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Search">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="searchText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="SearchResult" nillable="true" type="q34:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDoctorBySearchText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="searchText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="doctorType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDoctorBySearchTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetDoctorBySearchTextResult" nillable="true" type="q35:ArrayOfDoctor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserBySearchText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="searchText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="scopeId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserBySearchTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetUserBySearchTextResult" nillable="true" type="q36:ArrayOfUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReviewedExamsByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReviewedExamsByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetReviewedExamsByUserIdResult" nillable="true" type="q37:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonReviewedExamsByDoctorIdAndPracticeId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="doctorId" type="xs:int" />
+        <xs:element minOccurs="0" name="practiceId" type="xs:int" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonReviewedExamsByDoctorIdAndPracticeIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetNonReviewedExamsByDoctorIdAndPracticeIdResult" nillable="true" type="q38:ArrayOfExam" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateReviewedExam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="examId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isReviewed" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateReviewedExamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdateReviewedExamResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamNotesByExamId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="examId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamNotesByExamIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="GetExamNotesByExamIdResult" nillable="true" type="q39:ArrayOfExamNote" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamNoteByExamIdAndUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/WSShieldsApps" minOccurs="0" name="examNote" nillable="true" type="q40:ExamNote" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertExamNoteByExamIdAndUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertExamNoteByExamIdAndUserIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

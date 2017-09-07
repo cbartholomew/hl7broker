@@ -1,0 +1,78 @@
+﻿ALTER ROLE [db_datareader] ADD MEMBER [ReadingRadPooledUser];
+
+
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [InterfaceBrokerUser];
+
+
+GO
+ALTER ROLE [db_datawriter] ADD MEMBER [ReadingRadPooledUser];
+
+
+GO
+ALTER ROLE [db_datawriter] ADD MEMBER [InterfaceBrokerUser];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [SHC\STEPHENS];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [ReadingRadPooledUser];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\SQLSERVERAGENT];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT Service\MSSQLSERVER];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\Winmgmt];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\SQLWriter];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [SHC\mwilliams];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [SHC\CHRISB];
+
+
+GO
+ALTER SERVER ROLE [setupadmin] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [serveradmin] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [securityadmin] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [processadmin] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [diskadmin] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [dbcreator] ADD MEMBER [SHC\DANIELE];
+
+
+GO
+ALTER SERVER ROLE [bulkadmin] ADD MEMBER [SHC\DANIELE];
+

@@ -1,0 +1,351 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HL7BrokerSuite.Settings" GeneratedClassName="DataAccess">
+  <Profiles />
+  <Settings>
+    <Setting Name="BASE_CONNECTION_STRING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=[SERVER];Initial Catalog=[DATABASE];User Id=[USERNAME];Password=[PASSWORD]</Value>
+    </Setting>
+    <Setting Name="PUT_APPLICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysApplication</Value>
+    </Setting>
+    <Setting Name="PUT_COLUMN_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysColumnSet</Value>
+    </Setting>
+    <Setting Name="PUT_CREDENTIAL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysCredential</Value>
+    </Setting>
+    <Setting Name="PUT_CREDENTIAL_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysCredentialType</Value>
+    </Setting>
+    <Setting Name="PUT_DATABASE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysDatabaseInstance</Value>
+    </Setting>
+    <Setting Name="PUT_DATABASE_TABLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysDatabaseTable</Value>
+    </Setting>
+    <Setting Name="PUT_INTERFACE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysInterface</Value>
+    </Setting>
+    <Setting Name="PUT_MESSAGE_GROUP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysMessageGroup</Value>
+    </Setting>
+    <Setting Name="PUT_MESSAGE_GROUP_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysMessageGroupInstance</Value>
+    </Setting>
+    <Setting Name="PUT_MESSAGE_PART" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysMessagePart</Value>
+    </Setting>
+    <Setting Name="PUT_MESSAGE_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysMessageType</Value>
+    </Setting>
+    <Setting Name="PUT_SEGMENT_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysSegmentType</Value>
+    </Setting>
+    <Setting Name="GET_APPLICATION_DATABASE_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM vShieldsHL7Broker_GetApplicationDatabasesConfig</Value>
+    </Setting>
+    <Setting Name="GET_APPLICATION_INTERFACE_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM vShieldsHL7Broker_GetApplicationInterfaceConfig</Value>
+    </Setting>
+    <Setting Name="GET_ALL_APPLICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_APPLICATION]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_COLUMN_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_COLUMN_SET]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_CREDENTIAL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_CREDENTIAL]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_CREDENTIAL_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_CREDENTIAL_TYPE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_DATABASE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_INSTANCE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_DATABASE_TABLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_TABLE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_INTERFACE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_INTERFACE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_MESSAGE_GROUP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_GROUP]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_MESSAGE_GROUP_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_GROUP_INSTANCE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_MESSAGE_PART" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_PART]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_MESSAGE_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_TYPE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_SEGMENT_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_SEGMENT_TYPE]</Value>
+    </Setting>
+    <Setting Name="DELETE_APPLICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_APPLICATION] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_APPLICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_APPLICATION] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_COLUMN_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_COLUMN_SET] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_COLUMN_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM  [dbo].[SYS_COLUMN_SET] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="PUT_DIRECTION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysDirectionType</Value>
+    </Setting>
+    <Setting Name="PUT_COMMUNICATION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysCommunicationType</Value>
+    </Setting>
+    <Setting Name="PUT_COMMUNICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.Shields_HL7Broker_InsertIntoUpdateSysCommunication</Value>
+    </Setting>
+    <Setting Name="GET_ALL_COMMUNICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_COMMUNICATION]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_COMMUNICATION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_COMMUNICATION_TYPE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_DIRECTION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DIRECTION_TYPE]</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_COMMUNICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_COMMUNICATION] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_COMMUNICATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_COMMUNICATION] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_COMMUNICATION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_COMMUNICATION_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_CREDENTIAL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_CREDENTIAL] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_CREDENTIAL_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_CREDENTIAL_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_DATABASE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_DATABASE_TABLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_TABLE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_DIRECTION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DIRECTION_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_INTERFACE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_INTERFACE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_MESSAGE_GROUP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_GROUP] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_MESSAGE_GROUP_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_GROUP_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_MESSAGE_PART" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_PART] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_MESSAGE_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_MESSAGE_TYPE]  WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_SEGMENT_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_SEGMENT_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_COMMUNICATION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_COMMUNICATION_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_CREDENTIAL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_CREDENTIAL] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_CREDENTIAL_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_CREDENTIAL_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_DATABASE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_DATABASE_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_DATABASE_TABLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_DATABASE_TABLE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_DIRECTION_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_DIRECTION_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_INTERFACE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_INTERFACE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_MESSAGE_GROUP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_MESSAGE_GROUP] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_MESSAGE_GROUP_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_MESSAGE_GROUP_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_MESSAGE_PART" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_MESSAGE_PART] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_MESSAGE_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_MESSAGE_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_SEGMENT_TYPE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_SEGMENT_TYPE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_APPLICATION_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetApplicationConfiguration] WHERE CONFIG_ID = @CONFIG_ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_APPLICATION_DATABASE_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetApplicationDatabasesConfig] WHERE COMMUNICATION_ID = @COMMUNICATION_ID </Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_APPLICATION_INTERFACE_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetApplicationInterfaceConfig] WHERE COMMUNICATION_ID = @COMMUNICATION_ID </Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_DATABASE_TABLES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT  *  FROM [dbo].[vShieldsHL7Broker_GetDatabaseTables] WHERE DATABASE_INSTANCE_ID = @DATABASE_INSTANCE_ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_DATABASE_COLUMNS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetDatabaseColumns] WHERE DATABASE_TABLE_ID = @DATABASE_TABLE_ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_MESSAGE_POSITION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetMessagePosition] WHERE MESSAGE_GROUP_INSTANCE_ID = @MESSAGE_GROUP_INSTANCE_ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_ALL_APPLICATION_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetApplicationConfiguration]</Value>
+    </Setting>
+    <Setting Name="SERVICE_BASE_QUERY_INSERT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO #TABLE#  (#COLUMNS#) VALUES (#COLUMN_VALUES#);</Value>
+    </Setting>
+    <Setting Name="GET_ALL_DATABASE_TABLE_RELATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_TABLE_RELATION]</Value>
+    </Setting>
+    <Setting Name="PUT_DATABASE_TABLE_RELATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoUpdateSysDatabaseTableRelation]</Value>
+    </Setting>
+    <Setting Name="DELETE_DATABASE_TABLE_RELATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_DATABASE_TABLE_RELATION] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_DATABASE_TABLE_RELATION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_TABLE_RELATION] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_DATABASE_TABLE_RELATION_BY_SOURCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_DATABASE_TABLE_RELATION] WHERE SOURCE_DATABASE_TABLE_ID = @ID</Value>
+    </Setting>
+    <Setting Name="POST_MESSAGE_LOG_PROCEDURE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoAppMessageLog]</Value>
+    </Setting>
+    <Setting Name="POST_ACKNOWLEDGEMENT_PROCEDURE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoAppAcknowledgement]</Value>
+    </Setting>
+    <Setting Name="PUT_WEBSERVICE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoUpdateSysWebServiceInstance]</Value>
+    </Setting>
+    <Setting Name="PUT_WEBSERVICE_OBJECT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoUpdateSysWebserviceObject]</Value>
+    </Setting>
+    <Setting Name="PUT_WEBSERVICE_PROPERTY" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoUpdateSysWebserviceProperty]</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_WEBSERVICE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_WEBSERVICE_INSTANCE]	 WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_WEBSERVICE_OBJECT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_WEBSERVICE_OBJECT] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_WEBSERVICE_PROPERTY_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_WEBSERVICE_PROPERTY_SET] 	WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_WEBSERVICE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_WEBSERVICE_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_WEBSERVICE_OBJECT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_WEBSERVICE_OBJECT] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_WEBSERVICE_PROPERTY_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[SYS_WEBSERVICE_PROPERTY_SET] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_WEBSERVICE_CONFIG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetApplicationWebserviceConfig] WHERE [COMMUNICATION_ID] = @COMMUNICATION</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_WEBSERVICE_OBJECTS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetWebseviceObjects] WHERE WEBSERVICE_INSTANCE_ID = @WEBSERVICE_INSTANCE_ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_WEBSERVICE_PROPERTIES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetWebserviceObjectProperties] WHERE [WEBSERVICE_OBJECT_ID] = @WEBSERVICE_OBJECT_ID</Value>
+    </Setting>
+    <Setting Name="GET_ALL_WEBSERVICE_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_WEBSERVICE_INSTANCE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_WEBSERVICE_OBJECT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_WEBSERVICE_OBJECT]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_WEBSERVICE_PROPERTY_SET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[SYS_WEBSERVICE_PROPERTY_SET]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_MESSAGE_HEADER_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [DBO].[APP_MESSAGE_HEADER_INSTANCE]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_MESSAGE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [DBO].[APP_MESSAGE]</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_MESSAGE_HEADER_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[APP_MESSAGE_HEADER_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_MESSAGE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[APP_MESSAGE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_MESSAGE_HEADER_INSTANCE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[APP_MESSAGE_HEADER_INSTANCE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="DELETE_MESSAGE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [dbo].[APP_MESSAGE] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_MESSAGE_HEADER_INSTANCES" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT top 1 * FROM [dbo].[vShieldsHL7Broker_GetMessageHeaderInstances] WHERE [MHI_SENDING_APPLICATION] = @MHI_SENDING_APPLICATION AND MHI_PROCESSED = @MHI_PROCESSED ORDER BY MHI_CREATED_DTTM, MHI_PENDING_REPROCESS_DTTM</Value>
+    </Setting>
+    <Setting Name="UPDATE_MESSAGE_HEADER_INSTANCE_PROCESS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_UpdateAppMessageHeaderInstanceToProcessed]</Value>
+    </Setting>
+    <Setting Name="UPDATE_MESSAGE_HEADER_INSTANCE_FOR_REPROCESS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_UpdateAppMessageHeaderInstanceForReProcess]</Value>
+    </Setting>
+    <Setting Name="EXTERNAL_REPROCESS_RIS_REPORT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_ResendReportFromSectraRIS]</Value>
+    </Setting>
+    <Setting Name="GET_ALL_APPLICATION_SETTING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [DBO].[SYS_APPLICATION_SETTING]</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_APPLICATION_SETTING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [DBO].[SYS_APPLICATION_SETTING] WHERE ID = @ID</Value>
+    </Setting>
+    <Setting Name="PUT_APPLICATION_SETTING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoUpdateSysApplicationSetting]</Value>
+    </Setting>
+    <Setting Name="DELETE_APPLICATION_SETTING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [SYS].[SYS_APPLICATION_SETTING] WHERE ID = @ID</Value>
+    </Setting>
+    <Setting Name="GET_SINGLE_BROKER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [DBO].[APP_BROKER] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="GET_ALL_BROKER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [DBO].[APP_BROKER] </Value>
+    </Setting>
+    <Setting Name="PUT_BROKER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_InsertIntoUpdateAppBroker]</Value>
+    </Setting>
+    <Setting Name="SERVICE_VIEW_GET_BROKER_WORKLIST" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * FROM [dbo].[vShieldsHL7Broker_GetAppBrokerMainList] </Value>
+    </Setting>
+    <Setting Name="DELETE_BROKER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DELETE FROM [DBO].[APP_BROKER] WHERE [ID] = @ID</Value>
+    </Setting>
+    <Setting Name="UPDATE_INTERFACE_STATUS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_UpdateAppBrokerInterfaceStatus]</Value>
+    </Setting>
+    <Setting Name="UPDATE_PROCESS_IDENTITY" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_UpdateAppBrokerProcessIdentity]</Value>
+    </Setting>
+    <Setting Name="UPDATE_MESSAGE_STATS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[dbo].[Shields_HL7Broker_UpdateAppBrokerLastMessageStats]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

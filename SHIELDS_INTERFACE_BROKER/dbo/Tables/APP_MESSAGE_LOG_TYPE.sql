@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[APP_MESSAGE_LOG_TYPE] (
+    [ID]   INT           IDENTITY (1, 1) NOT NULL,
+    [TYPE] NVARCHAR (50) NOT NULL
+);
+

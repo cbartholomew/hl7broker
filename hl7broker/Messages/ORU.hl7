@@ -1,0 +1,98 @@
+MSH|^~\&|RSERVER|Sectra|SEL|5|20140416192926||ORU^R01|49678944|P|2.3
+PID|1|4355254^^^Umass MRI - University Campus&5&L^^Umass MRI - University Campus&5&L|4355254^^^Umass MRI - University Campus&5&L^^Umass MRI - University Campus&5&L~220070730^^^xx - UMass Memorial Medical Center&52&L^^xx - UMass Memorial Medical Center&52&L|4355254|Santerre^Norbert||19340506|M|||PO Box 283^^Quinebaug^CT^06262^US|US|860-923-1164
+PV1|1|I|14^Umass GE Univ 1.5^5^Umass MRI - University Campus|||||033050^Veerreddy^Prashant^^MD^^Internal Medicine^P|||U Mass Memorial Hospital/Hospitalst^119 Belmont St^Worcester^MA^01605||||||||||||||||||||||||||||5|||||201404161610|201404161650
+PV2|||||||||||||ROUT^Routine^^^^^^^Umass MRI - University Campus&5&L^^^^^Umass MRI - University Campus&5&L
+ORC|RE|4355254.1|4355254.1||CM||^^M40^201404161610^201404161650^S||201404152042|^Zink^Ashley||033050^Veerreddy^Prashant^^MD||508-334-8545|201404161610||5^Umass MRI - University Campus|10^Reported (final)
+OBR|1|4355254.1|4355254.1|401^Shoulder (C-) CPT 73221^L^UMUNMRI1^AE_Title^L|S|201404152042|201404161610|201404161650||033050^1609813658|||acute onset pain and immobility 4/14/14- ? tendonitis vs. ligamentous rupture vs. effusion vs. gout||MSK^Right|033050^Veerreddy^Prashant^^MD|508-334-8545|||13622202||||MR|F||^^M40^201404161610^201404161650^S|||s|Non-Contrast Exam^^acute onset pain and immobility 4/14/14- ? tendonitis vs. ligamentous rupture vs. effusion vs. gout|1538336565&&&&&&&R^Lo^Hao Steven^^MD|164765^^MD|^Thibeault^Jaime||201404161610
+OBX|1|FT|2291408^InterpNo^L|1|                        UMASS MRI - UNIVERSITY CAMPUS||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|2|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|3|ACCESSION NUMBER      : 4355254.1||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|4|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|5|PATIENT NAME          : Santerre, Norbert||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|6|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|7|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|8|MEDICAL RECORD NUMBER : 4355254||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|9|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|10|DATE OF BIRTH         : 05/06/1934||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|11|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|12|DATE OF EXAM          : 04/16/2014||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|13|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|14|REFERRING PHYSICIAN   : VEERREDDY, PRASHANT||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|15|                        U Mass Memorial Hospital/Hospitalst||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|16|                        119 Belmont St||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|17|                        Worcester, MA 01605||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|18|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|19|RESULTS PREFERENCE    : Reports via .||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|20|                        Images on  via .||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|21|                        Secure access to reports and images at||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|22|                        WWW.SHIELDS.COM for medical professionals.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|23|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|24|EXAM                  : MR - SHOULDER (C-) CPT 73221 - RIGHT||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|25|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|26|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|27|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|28|Final Report||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|29|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|30|EXAMINATION:||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|31|MRI right shoulder without contrast||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|32| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|33|INDICATION: 79 -year-old male with acute onset of pain and immobility ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|34|on 4/14/2014. Question tendinitis, ligamentous rupture, effusion, ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|35|versus gout.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|36| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|37|COMPARISON: ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|38|Radiographs performed 4/15/2014.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|39| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|40|TECHNIQUE:  ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|41|Images obtained on an 1.5 Tesla MRI system. Pulse sequences: oblique ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|42|sagittal PD weighted; axial and oblique sagittal PD weighted with fat ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|43|saturation; oblique coronal PD weighted with fat saturation; oblique ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|44|coronal T1 weighted.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|45| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|46|FINDINGS:  ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|47|Image quality is significantly limited by motion artifact.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|48| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|49|There is a massive rotator cuff tear involving the supraspinatus, ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|50|infraspinatus, and subscapularis tendons. Only the inferior most ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|51|fibers of the supraspinatus and interspace tendons remain intact. The ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|52|remaining tendons are retracted to the level of the scapular glenoid. ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|53|The rotator cuff muscles demonstrate acute intramuscular edema. ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|54|Partial fatty infiltration of the rotator cuff musculature is ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|55|compatible with chronic atrophy.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|56| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|57|A moderate glenohumeral joint effusion extends into the subcoracoid ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|58|space and subacromial-subdeltoid bursa.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|59| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|60|There is medialization of the long head of the biceps tendon. Focal ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|61|linear fluid signal intensity at the biceps labral anchor suggests ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|62|high-grade partial thickness or full-thickness tearing. There is a ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|63|large posterior inferior glenoid labral tear extending approximately ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|64|from the 5:00 to 12:00 positions. There are associated ganglion cyst ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|65|extending posterior superiorly from the posterior labrum.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|66| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|67|Capsular thickening and bone marrow edema at the acromioclavicular ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|68|joint indicates moderate degenerative arthrosis. There are small ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|69|degenerative cysts in the humeral head. The visualized neurovascular ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|70|structures are unremarkable. There is intramuscular edema in the ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|71|overlying deltoid muscle. ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|72| ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|73|IMPRESSION:  ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|74|1.  Massive retracted rotator cuff tear, with only the inferiormost ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|75|infraspinatus and subscapularis tendons intact. Rotator cuff muscular ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|76|edema with underlying chronic atrophy.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|77|2.  High-grade partial-thickness or full-thickness tear of the ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|78|biceps-labral anchor.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|79|3. Moderate glenohumeral joint effusion extending into the ||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|80|subacromial-subdeltoid bursa.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|81|4. Large posterior inferior labral tear.||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|82|-----||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|83|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|84|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|85|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|86|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|87|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|88|||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|89|PHYSICIAN             :  LO, HAO STEVEN MD||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|90|                        (Signature on file)||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|91|                        04/16/2014||||||F|||||247293^Lo^Hao Steven
+OBX|1|FT|2291408^InterpNo^L|92|||||||F|||||247293^Lo^Hao Steven

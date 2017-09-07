@@ -1,0 +1,15 @@
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerConsoleTest.exe.config
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerConsoleTest.exe
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerConsoleTest.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerSuite.dll
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerSuite.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\obj\Release\HL7BrokerConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\obj\Release\HL7BrokerConsoleTest.exe
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerConsoleTest\obj\Release\HL7BrokerConsoleTest.pdb
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerConsoleTest.exe.config
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerConsoleTest.exe
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerConsoleTest.pdb
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\bin\Release\HL7BrokerSuite.dll
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\obj\Release\HL7BrokerConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\obj\Release\HL7BrokerConsoleTest.exe
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerConsoleTest\obj\Release\HL7BrokerConsoleTest.pdb

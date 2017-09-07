@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Active Connections";
+}
+
+
+<h2> @ViewBag.OtherTitle </h2>
+
+<h3></h3>
+<table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Interface ID</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Queue Count</th>
+                <th>Last Message DTTM</th>
+                <th>Last Message ID</th>
+                <th>Server Process ID</th>
+            </tr>
+        </thead>
+        @foreach (HL7BrokerSuite.App.Model.Broker iface in ViewBag.interfaceList)
+        { 
+            <tr style="background-color:@iface.interfaceStatusColor">
+                <td>@iface.brokerId</td> 
+                <td>@iface.applicationDescription</td> 
+                <td>@iface.interfaceStatusName</td>  
+                <td>@iface.brokerQueueCount</td>   
+                <td>@iface.brokerLastMessageDTTM</td>    
+                <td>@iface.brokerLastMessageId</td> 
+                <td>@iface.brokerProcessId</td> 
+            </tr>
+        }       
+</table>
+

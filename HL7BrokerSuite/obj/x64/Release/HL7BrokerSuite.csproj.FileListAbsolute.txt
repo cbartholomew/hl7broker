@@ -1,0 +1,10 @@
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\bin\x64\Release\HL7BrokerSuite.dll.config
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\bin\x64\Release\HL7BrokerSuite.dll
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\bin\x64\Release\HL7BrokerSuite.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\obj\x64\Release\HL7BrokerSuite.dll
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\obj\x64\Release\HL7BrokerSuite.pdb
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\bin\x64\Release\HL7BrokerSuite.dll.config
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\bin\x64\Release\HL7BrokerSuite.dll
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\bin\x64\Release\HL7BrokerSuite.pdb
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\obj\x64\Release\HL7BrokerSuite.dll
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\obj\x64\Release\HL7BrokerSuite.pdb

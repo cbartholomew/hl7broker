@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{460990FB-F830-4F52-A119-1CEB1CDAD6C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HL7BrokerSuite</RootNamespace>
+    <AssemblyName>HL7BrokerSuite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\DAO\AcknowledgementDAO.cs" />
+    <Compile Include="App\DAO\BrokerDAO.cs" />
+    <Compile Include="App\DAO\MessageBucketDAO.cs" />
+    <Compile Include="App\DAO\MessageDAO.cs" />
+    <Compile Include="App\DAO\MessageHeaderInstanceDAO.cs" />
+    <Compile Include="App\DAO\MessageLogDAO.cs" />
+    <Compile Include="App\Model\Acknowledgement.cs" />
+    <Compile Include="App\Model\Broker.cs" />
+    <Compile Include="App\Model\MessageBucket.cs" />
+    <Compile Include="App\Model\Message.cs" />
+    <Compile Include="App\Model\MessageHeaderInstance.cs" />
+    <Compile Include="App\Model\MessageLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\DataAccess1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DataAccess.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\DAO\ApplicationSettingDAO.cs" />
+    <Compile Include="Sys\DAO\ConfigurationDAO.cs" />
+    <Compile Include="Sys\DAO\DatabaseTableRelationDAO.cs" />
+    <Compile Include="Sys\DAO\WebserviceInstanceDAO.cs" />
+    <Compile Include="Sys\DAO\WebserviceObjectDAO.cs" />
+    <Compile Include="Sys\DAO\WebservicePropertySetDAO.cs" />
+    <Compile Include="Sys\Model\ApplicationSetting.cs" />
+    <Compile Include="Sys\Model\Configuration.cs" />
+    <Compile Include="ErrorLogger.cs" />
+    <Compile Include="Sys\DAO\ApplicationDAO.cs" />
+    <Compile Include="Sys\DAO\ColumnSetDAO.cs" />
+    <Compile Include="Sys\DAO\CommunicationDAO.cs" />
+    <Compile Include="Sys\DAO\CommunicationTypeDAO.cs" />
+    <Compile Include="Sys\DAO\CredentialDAO.cs" />
+    <Compile Include="Sys\DAO\CredentialTypeDAO.cs" />
+    <Compile Include="Sys\DAO\DatabaseInstanceDAO.cs" />
+    <Compile Include="Sys\DAO\DatabaseTableDAO.cs" />
+    <Compile Include="Sys\DAO\DirectionTypeDAO.cs" />
+    <Compile Include="Sys\DAO\InterfaceDAO.cs" />
+    <Compile Include="Sys\DAO\MessageGroupInstanceDAO.cs" />
+    <Compile Include="Sys\DAO\MessagePartDAO.cs" />
+    <Compile Include="Sys\DAO\MessageTypeDAO.cs" />
+    <Compile Include="Sys\DAO\SegmentTypeDAO.cs" />
+    <Compile Include="Sys\Model\Application.cs" />
+    <Compile Include="Sys\Model\ColumnSet.cs" />
+    <Compile Include="Sys\Model\Communication.cs" />
+    <Compile Include="Sys\Model\CommunicationType.cs" />
+    <Compile Include="Sys\Model\Credential.cs" />
+    <Compile Include="Sys\Model\CredentialType.cs" />
+    <Compile Include="Sys\Model\DatabaseInstance.cs" />
+    <Compile Include="Sys\Model\DatabaseTable.cs" />
+    <Compile Include="Sys\Model\DatabaseTableRelation.cs" />
+    <Compile Include="Sys\Model\DirectionType.cs" />
+    <Compile Include="Sys\Model\Interface.cs" />
+    <Compile Include="Sys\Model\MessageGroup.cs" />
+    <Compile Include="Sys\DAO\MessageGroupDAO.cs" />
+    <Compile Include="Sys\Model\MessageGroupInstance.cs" />
+    <Compile Include="Sys\Model\MessagePart.cs" />
+    <Compile Include="Sys\Model\MessageType.cs" />
+    <Compile Include="Sys\Model\SegmentType.cs" />
+    <Compile Include="Sys\Model\SysCredential.cs" />
+    <Compile Include="Settings\DataAccess.cs" />
+    <Compile Include="Settings\DataAccessSysCredentials.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>DataAccessSysCredentials.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\Model\WebserviceInstance.cs" />
+    <Compile Include="Sys\Model\WebserviceObject.cs" />
+    <Compile Include="Sys\Model\WebservicePropertySet.cs" />
+    <Compile Include="Utility\ConfigurationUtility.cs" />
+    <Compile Include="Utility\CopyConfigurationUtility.cs" />
+    <Compile Include="Utility\DAOUtility.cs" />
+    <Compile Include="Utility\GenericUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Include="app.Debug.config">
+      <DependentUpon>app.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="app.Release.config">
+      <DependentUpon>app.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
+    <None Include="Settings\DataAccess.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DataAccess1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\DataAccessSysCredentials.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>DataAccessSysCredentials.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>echo "Copying HL7Suite to HL7Broker Library Folder"|xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "$(SolutionDir)$(SolutionName)\Library"
+echo "Copying HL7Suite to HL7BrokerConsoleTest Library Folder"|xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "$(SolutionDir)$(SolutionName)ConsoleTest\Library"
+echo "Copying HL7Suite to HL7BrokerWeb Library Folder"|xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "$(SolutionDir)$(SolutionName)Web\Library"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Label="SlowCheetah">
+    <SlowCheetahToolsPath>$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\SlowCheetah.2.5.10.8-beta\tools\))</SlowCheetahToolsPath>
+    <SlowCheetah_EnableImportFromNuGet Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='' ">true</SlowCheetah_EnableImportFromNuGet>
+    <SlowCheetah_NuGetImportPath Condition=" '$(SlowCheetah_NuGetImportPath)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\Properties\SlowCheetah\SlowCheetah.Transforms.targets ))</SlowCheetah_NuGetImportPath>
+    <SlowCheetahTargets Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='true' and Exists('$(SlowCheetah_NuGetImportPath)') ">$(SlowCheetah_NuGetImportPath)</SlowCheetahTargets>
+  </PropertyGroup>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" Label="SlowCheetah" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

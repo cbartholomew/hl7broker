@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SHC\mwilliams]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

@@ -1,0 +1,5 @@
+﻿Location
+Patient	
+Organization
+Exam
+Report

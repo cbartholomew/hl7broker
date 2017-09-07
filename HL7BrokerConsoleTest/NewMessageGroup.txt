@@ -1,0 +1,4 @@
+﻿## message,segement,description|Field^Value,Component^Value,Sub Compnenent^Value,Repitition^Value|DatabaseTableId^Value,ColumnName^Value,PrimaryKey^Boolean,DataType
+2,1,MSH_CONFIG / MSH / CREATED_DTTM|3^1,4^0,5^0,6^0|6,ORDER_CONTROL_CODE,false,TEXT
+2,1,MSH_CONFIG / PID / PATIENT_IDENTIFIER|3^2,4^1,5^0,6^0|3,PATIENT_IDENTIFIER,false,TEXT
+

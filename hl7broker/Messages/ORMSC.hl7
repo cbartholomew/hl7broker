@@ -1,0 +1,8 @@
+MSH|^~\&|RSERVER|Sectra|GenOneReport|GenOneReport|20130514025204||ORM^O01|37632027|P|2.3||||||||
+PID|1|4271786^^^CMMIC MRI - University Campus&5&L^^CMMIC MRI - University Campus&5&L|4271786^^^CMMIC MRI - University Campus&5&L^^CMMIC MRI - University Campus&5&L|4271786|OSMANLI^NADJIB^^||19871026|M|||||857-210-6210||||||||||||||||||
+PV1|1|O|14^CMMIC GE LX Univ 1.5^5^CMMIC MRI - University Campus^^|||||055749A^Nichols^Constance G^^MD^|055749A^Nichols^Constance G^^MD^||||||||||||||||||||||||||||||5^CMMIC MRI - University Campus^|||||201305140230|201305140320||||||||
+PV2|||||||||||||ROUT^Routine^^^^^^^CMMIC MRI - University Campus&5&L^^^^^CMMIC MRI - University Campus&5&L^^20130513|||||||||||||||||||||||||
+GT1|1||OSMANLI^NADJIB^^^|||857-210-6210||19871026|M|||||||||||||||||||||||||||||||||||||||||||||||
+IN1|1||I54232|UMass Memorial Health Care|291 Lincoln Street^Suite 306^Worcester^MA^01604|W23990|508-334-8635|||||||^^UMass Memorial Health Care||||||||||||||||||||||520073899||||||||||||||
+ORC|SC|4271786.1|4271786.1||SC||^^M50^201305140230^201305140320^S^^^^||201305131952|^Gagan^Mary-Ellen^^^||055749A^Nichols^Constance G^^MD^||508-856-4101|201305140230||5^CMMIC MRI - University Campus|2^Booked||
+OBR|1|4271786.1|4271786.1|199^Brain (C-/C+) CPT 70553^L^^AE_Title^L|S^ER Patient - Wet Read|201305131952|201305140230|201305140320||55749^1619952264|||HEADACHES X 3 WEEKS, NEUROLOGY REQUESTS MRI.^||NEURO^|055749A^Nichols^Constance G^^MD^|508-856-4101|||||||MR|||^^M50^201305140230^201305140320^S^^^^|||s|Contrast at Rad's discretion^^HEADACHES X 3 WEEKS, NEUROLOGY REQUESTS MRI.|||||201305140230||||||||

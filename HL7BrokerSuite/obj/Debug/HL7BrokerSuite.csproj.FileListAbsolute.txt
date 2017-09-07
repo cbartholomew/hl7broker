@@ -1,0 +1,17 @@
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.dll
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.dll.config
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.dll
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.pdb
+C:\Users\chrisb\Documents\ApplicationDevelopment\Working\HL7Broker.root\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Source\ShieldsAppDev\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.dll.config
+C:\Users\Christopher\Source\ShieldsAppDev\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.dll
+C:\Users\Christopher\Source\ShieldsAppDev\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.pdb
+C:\Users\Christopher\Source\ShieldsAppDev\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Source\ShieldsAppDev\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.dll
+C:\Users\Christopher\Source\ShieldsAppDev\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.pdb
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.dll.config
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.dll
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\bin\Debug\HL7BrokerSuite.pdb
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.dll
+C:\Users\chrisb\Source\Repos\HL7Broker\HL7BrokerSuite\obj\Debug\HL7BrokerSuite.pdb

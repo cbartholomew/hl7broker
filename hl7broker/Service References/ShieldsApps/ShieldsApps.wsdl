@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ShieldsApps" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="ShieldsAppsSOAP_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://shcappprod.shc.shcnet.pri/WSShieldsApps/ShieldsApps.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://shcappprod.shc.shcnet.pri/WSShieldsApps/ShieldsApps.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://shcappprod.shc.shcnet.pri/WSShieldsApps/ShieldsApps.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WSShieldsApps" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IShieldsApps_GetPatientByPatientId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByPatientId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPatientByPatientId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPatientByPatientIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdatePatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdatePatient" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdatePatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdatePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetAllRadiologists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRadiologists" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetAllRadiologists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRadiologistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateDoctor_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateDoctor" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateDoctor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateDoctorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetLocationsByDoctorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsByDoctorId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetLocationsByDoctorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsByDoctorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetDoctorsByLocationId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorsByLocationId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetDoctorsByLocationId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorsByLocationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetLocationsWithDoctorsByDoctorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithDoctorsByDoctorId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetLocationsWithDoctorsByDoctorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithDoctorsByDoctorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertDoctorIntoLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDoctorIntoLocation" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertDoctorIntoLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDoctorIntoLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLocation" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertLocationIntoPractice_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLocationIntoPractice" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertLocationIntoPractice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLocationIntoPracticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamByExamId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamByExamId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamByExamId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamByExamIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamByAccessionNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamByAccessionNo" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamByAccessionNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamByAccessionNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamsByDoctorIdAndLocationId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamsByDoctorIdAndLocationId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamsByDoctorIdAndLocationId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamsByDoctorIdAndLocationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamsByDoctorIdAndPracticeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamsByDoctorIdAndPracticeId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamsByDoctorIdAndPracticeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamsByDoctorIdAndPracticeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetUnlinkedExamsFromLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnlinkedExamsFromLocations" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetUnlinkedExamsFromLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnlinkedExamsFromLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_SetupSelLinks_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetupSelLinks" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_SetupSelLinks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetupSelLinksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamCode" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamSide_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamSide" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamSide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamSideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamStatus" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamType_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamType" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateExam_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateExam" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateExam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamByHl7_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamByHl7" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamByHl7_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamByHl7Response" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetReportByExamId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportByExamId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetReportByExamId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportByExamIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertReport" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPreferencesByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreferencesByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPreferencesByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreferencesByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdatePreferencesByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdatePreferencesByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdatePreferencesByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdatePreferencesByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPracticesByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticesByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPracticesByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticesByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetDoctorsByPracticeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorsByPracticeId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetDoctorsByPracticeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorsByPracticeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPracticesWithDoctorsByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticesWithDoctorsByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetPracticesWithDoctorsByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPracticesWithDoctorsByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdatePractice_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdatePractice" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdatePractice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdatePracticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUserIntoPractice_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserIntoPractice" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUserIntoPractice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserIntoPracticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertDoctorIntoPractice_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDoctorIntoPractice" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertDoctorIntoPractice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDoctorIntoPracticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetSharedExamsByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSharedExamsByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetSharedExamsByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSharedExamsByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetUsersYouRecentlySharedWith_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersYouRecentlySharedWith" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetUsersYouRecentlySharedWith_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersYouRecentlySharedWithResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateSharedExam_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateSharedExam" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateSharedExam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateSharedExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_Search_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_Search_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetDoctorBySearchText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorBySearchText" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetDoctorBySearchText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDoctorBySearchTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetUserBySearchText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserBySearchText" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetUserBySearchText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserBySearchTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetReviewedExamsByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewedExamsByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetReviewedExamsByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewedExamsByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetNonReviewedExamsByDoctorIdAndPracticeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonReviewedExamsByDoctorIdAndPracticeId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetNonReviewedExamsByDoctorIdAndPracticeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonReviewedExamsByDoctorIdAndPracticeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateReviewedExam_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateReviewedExam" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertUpdateReviewedExam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUpdateReviewedExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamNotesByExamId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamNotesByExamId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_GetExamNotesByExamId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamNotesByExamIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamNoteByExamIdAndUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamNoteByExamIdAndUserId" />
+  </wsdl:message>
+  <wsdl:message name="IShieldsApps_InsertExamNoteByExamIdAndUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertExamNoteByExamIdAndUserIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IShieldsApps">
+    <wsdl:operation name="GetPatientByPatientId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetPatientByPatientId" message="tns:IShieldsApps_GetPatientByPatientId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetPatientByPatientIdResponse" message="tns:IShieldsApps_GetPatientByPatientId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdatePatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdatePatient" message="tns:IShieldsApps_InsertUpdatePatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdatePatientResponse" message="tns:IShieldsApps_InsertUpdatePatient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRadiologists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetAllRadiologists" message="tns:IShieldsApps_GetAllRadiologists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetAllRadiologistsResponse" message="tns:IShieldsApps_GetAllRadiologists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateDoctor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateDoctor" message="tns:IShieldsApps_InsertUpdateDoctor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateDoctorResponse" message="tns:IShieldsApps_InsertUpdateDoctor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByDoctorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetLocationsByDoctorId" message="tns:IShieldsApps_GetLocationsByDoctorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetLocationsByDoctorIdResponse" message="tns:IShieldsApps_GetLocationsByDoctorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorsByLocationId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetDoctorsByLocationId" message="tns:IShieldsApps_GetDoctorsByLocationId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetDoctorsByLocationIdResponse" message="tns:IShieldsApps_GetDoctorsByLocationId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithDoctorsByDoctorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetLocationsWithDoctorsByDoctorId" message="tns:IShieldsApps_GetLocationsWithDoctorsByDoctorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetLocationsWithDoctorsByDoctorIdResponse" message="tns:IShieldsApps_GetLocationsWithDoctorsByDoctorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDoctorIntoLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertDoctorIntoLocation" message="tns:IShieldsApps_InsertDoctorIntoLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertDoctorIntoLocationResponse" message="tns:IShieldsApps_InsertDoctorIntoLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertLocation" message="tns:IShieldsApps_InsertLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertLocationResponse" message="tns:IShieldsApps_InsertLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocationIntoPractice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertLocationIntoPractice" message="tns:IShieldsApps_InsertLocationIntoPractice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertLocationIntoPracticeResponse" message="tns:IShieldsApps_InsertLocationIntoPractice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamByExamId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetExamByExamId" message="tns:IShieldsApps_GetExamByExamId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetExamByExamIdResponse" message="tns:IShieldsApps_GetExamByExamId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamByAccessionNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetExamByAccessionNo" message="tns:IShieldsApps_GetExamByAccessionNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetExamByAccessionNoResponse" message="tns:IShieldsApps_GetExamByAccessionNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamsByDoctorIdAndLocationId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetExamsByDoctorIdAndLocationId" message="tns:IShieldsApps_GetExamsByDoctorIdAndLocationId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetExamsByDoctorIdAndLocationIdResponse" message="tns:IShieldsApps_GetExamsByDoctorIdAndLocationId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamsByDoctorIdAndPracticeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetExamsByDoctorIdAndPracticeId" message="tns:IShieldsApps_GetExamsByDoctorIdAndPracticeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetExamsByDoctorIdAndPracticeIdResponse" message="tns:IShieldsApps_GetExamsByDoctorIdAndPracticeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnlinkedExamsFromLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetUnlinkedExamsFromLocations" message="tns:IShieldsApps_GetUnlinkedExamsFromLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetUnlinkedExamsFromLocationsResponse" message="tns:IShieldsApps_GetUnlinkedExamsFromLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupSelLinks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/SetupSelLinks" message="tns:IShieldsApps_SetupSelLinks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/SetupSelLinksResponse" message="tns:IShieldsApps_SetupSelLinks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamCode" message="tns:IShieldsApps_InsertExamCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamCodeResponse" message="tns:IShieldsApps_InsertExamCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamSide">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamSide" message="tns:IShieldsApps_InsertExamSide_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamSideResponse" message="tns:IShieldsApps_InsertExamSide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamStatus" message="tns:IShieldsApps_InsertExamStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamStatusResponse" message="tns:IShieldsApps_InsertExamStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamType" message="tns:IShieldsApps_InsertExamType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamTypeResponse" message="tns:IShieldsApps_InsertExamType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateExam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateExam" message="tns:IShieldsApps_InsertUpdateExam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateExamResponse" message="tns:IShieldsApps_InsertUpdateExam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamByHl7">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamByHl7" message="tns:IShieldsApps_InsertExamByHl7_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamByHl7Response" message="tns:IShieldsApps_InsertExamByHl7_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateOrganization" message="tns:IShieldsApps_InsertUpdateOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateOrganizationResponse" message="tns:IShieldsApps_InsertUpdateOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportByExamId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetReportByExamId" message="tns:IShieldsApps_GetReportByExamId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetReportByExamIdResponse" message="tns:IShieldsApps_GetReportByExamId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertReport" message="tns:IShieldsApps_InsertReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertReportResponse" message="tns:IShieldsApps_InsertReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreferencesByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetPreferencesByUserId" message="tns:IShieldsApps_GetPreferencesByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetPreferencesByUserIdResponse" message="tns:IShieldsApps_GetPreferencesByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdatePreferencesByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdatePreferencesByUserId" message="tns:IShieldsApps_InsertUpdatePreferencesByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdatePreferencesByUserIdResponse" message="tns:IShieldsApps_InsertUpdatePreferencesByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPracticesByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetPracticesByUserId" message="tns:IShieldsApps_GetPracticesByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetPracticesByUserIdResponse" message="tns:IShieldsApps_GetPracticesByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorsByPracticeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetDoctorsByPracticeId" message="tns:IShieldsApps_GetDoctorsByPracticeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetDoctorsByPracticeIdResponse" message="tns:IShieldsApps_GetDoctorsByPracticeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPracticesWithDoctorsByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetPracticesWithDoctorsByUserId" message="tns:IShieldsApps_GetPracticesWithDoctorsByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetPracticesWithDoctorsByUserIdResponse" message="tns:IShieldsApps_GetPracticesWithDoctorsByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdatePractice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdatePractice" message="tns:IShieldsApps_InsertUpdatePractice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdatePracticeResponse" message="tns:IShieldsApps_InsertUpdatePractice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserIntoPractice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUserIntoPractice" message="tns:IShieldsApps_InsertUserIntoPractice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUserIntoPracticeResponse" message="tns:IShieldsApps_InsertUserIntoPractice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDoctorIntoPractice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertDoctorIntoPractice" message="tns:IShieldsApps_InsertDoctorIntoPractice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertDoctorIntoPracticeResponse" message="tns:IShieldsApps_InsertDoctorIntoPractice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSharedExamsByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetSharedExamsByUserId" message="tns:IShieldsApps_GetSharedExamsByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetSharedExamsByUserIdResponse" message="tns:IShieldsApps_GetSharedExamsByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersYouRecentlySharedWith">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetUsersYouRecentlySharedWith" message="tns:IShieldsApps_GetUsersYouRecentlySharedWith_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetUsersYouRecentlySharedWithResponse" message="tns:IShieldsApps_GetUsersYouRecentlySharedWith_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateSharedExam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateSharedExam" message="tns:IShieldsApps_InsertUpdateSharedExam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateSharedExamResponse" message="tns:IShieldsApps_InsertUpdateSharedExam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/Search" message="tns:IShieldsApps_Search_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/SearchResponse" message="tns:IShieldsApps_Search_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorBySearchText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetDoctorBySearchText" message="tns:IShieldsApps_GetDoctorBySearchText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetDoctorBySearchTextResponse" message="tns:IShieldsApps_GetDoctorBySearchText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserBySearchText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetUserBySearchText" message="tns:IShieldsApps_GetUserBySearchText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetUserBySearchTextResponse" message="tns:IShieldsApps_GetUserBySearchText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewedExamsByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetReviewedExamsByUserId" message="tns:IShieldsApps_GetReviewedExamsByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetReviewedExamsByUserIdResponse" message="tns:IShieldsApps_GetReviewedExamsByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonReviewedExamsByDoctorIdAndPracticeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetNonReviewedExamsByDoctorIdAndPracticeId" message="tns:IShieldsApps_GetNonReviewedExamsByDoctorIdAndPracticeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetNonReviewedExamsByDoctorIdAndPracticeIdResponse" message="tns:IShieldsApps_GetNonReviewedExamsByDoctorIdAndPracticeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateReviewedExam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateReviewedExam" message="tns:IShieldsApps_InsertUpdateReviewedExam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertUpdateReviewedExamResponse" message="tns:IShieldsApps_InsertUpdateReviewedExam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamNotesByExamId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/GetExamNotesByExamId" message="tns:IShieldsApps_GetExamNotesByExamId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/GetExamNotesByExamIdResponse" message="tns:IShieldsApps_GetExamNotesByExamId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamNoteByExamIdAndUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamNoteByExamIdAndUserId" message="tns:IShieldsApps_InsertExamNoteByExamIdAndUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShieldsApps/InsertExamNoteByExamIdAndUserIdResponse" message="tns:IShieldsApps_InsertExamNoteByExamIdAndUserId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ShieldsAppsSOAP" type="tns:IShieldsApps">
+    <wsp:PolicyReference URI="#ShieldsAppsSOAP_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPatientByPatientId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetPatientByPatientId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdatePatient">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdatePatient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRadiologists">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetAllRadiologists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateDoctor">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdateDoctor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByDoctorId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetLocationsByDoctorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorsByLocationId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetDoctorsByLocationId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithDoctorsByDoctorId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetLocationsWithDoctorsByDoctorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDoctorIntoLocation">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertDoctorIntoLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocation">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLocationIntoPractice">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertLocationIntoPractice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamByExamId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetExamByExamId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamByAccessionNo">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetExamByAccessionNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamsByDoctorIdAndLocationId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetExamsByDoctorIdAndLocationId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamsByDoctorIdAndPracticeId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetExamsByDoctorIdAndPracticeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnlinkedExamsFromLocations">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetUnlinkedExamsFromLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetupSelLinks">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/SetupSelLinks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamCode">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertExamCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamSide">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertExamSide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamStatus">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertExamStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamType">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertExamType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateExam">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdateExam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamByHl7">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertExamByHl7" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateOrganization">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdateOrganization" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportByExamId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetReportByExamId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReport">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreferencesByUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetPreferencesByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdatePreferencesByUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdatePreferencesByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPracticesByUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetPracticesByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorsByPracticeId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetDoctorsByPracticeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPracticesWithDoctorsByUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetPracticesWithDoctorsByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdatePractice">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdatePractice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserIntoPractice">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUserIntoPractice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDoctorIntoPractice">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertDoctorIntoPractice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSharedExamsByUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetSharedExamsByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersYouRecentlySharedWith">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetUsersYouRecentlySharedWith" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateSharedExam">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdateSharedExam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/Search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDoctorBySearchText">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetDoctorBySearchText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserBySearchText">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetUserBySearchText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewedExamsByUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetReviewedExamsByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonReviewedExamsByDoctorIdAndPracticeId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetNonReviewedExamsByDoctorIdAndPracticeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUpdateReviewedExam">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertUpdateReviewedExam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamNotesByExamId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/GetExamNotesByExamId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertExamNoteByExamIdAndUserId">
+      <soap:operation soapAction="http://tempuri.org/IShieldsApps/InsertExamNoteByExamIdAndUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ShieldsApps">
+    <wsdl:port name="ShieldsAppsSOAP" binding="tns:ShieldsAppsSOAP">
+      <soap:address location="https://shcappprod.shc.shcnet.pri/WSShieldsApps/ShieldsApps.svc/ShieldsApps" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

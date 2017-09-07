@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[APP_MESSAGE_LOG] (
+    [ID]                  BIGINT   IDENTITY (1, 1) NOT NULL,
+    [MESSAGE_ID]          BIGINT   NOT NULL,
+    [MESSAGE_LOG_TYPE_ID] INT      NOT NULL,
+    [CREATED_DTTM]        DATETIME NOT NULL
+);
+

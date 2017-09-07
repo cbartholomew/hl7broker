@@ -1,0 +1,109 @@
+MSH|^~\&|RSERVER|Sectra|General|General|20140618145132||ORU^R01|52095295|P|2.3||||||||
+PID|1|2297653^^^Wilkens OP Medical Complex&79&L^^Wilkens OP Medical Complex&79&L|2297653^^^Wilkens OP Medical Complex&79&L^^Wilkens OP Medical Complex&79&L~10443955^^^xx - Cape Cod Hospital&92&L^^xx - Cape Cod Hospital&92&L|2297653|Saccocia^Nicholas L^^||19750921|M|||PO BOX 128^^DENNIS^MA^02638^US|US|508-534-9520|508-534-9520||M|||019-58-9108||||||||||||
+PD1||||S1276702B^Klein^Wesley^^MD^|||||||||
+PV1|1|O|120^Wilk Siem Verio 3.0T^79^Wilkens OP Medical Complex^^|||||S1276702B^Klein^Wesley^^MD^|S1276702B^Klein^Wesley^^MD^||||||||||||||||||||||||||||||79^Wilkens OP Medical Complex^04-2103600|||||201406181330|201406181400||||||||
+PV2|||||||||||||ROUT^Routine^^^^^^^Wilkens OP Medical Complex&79&L^^^^^Wilkens OP Medical Complex&79&L^^20140618|||||||||||||||||||||||||
+ORC|RE|2297653.1|2297653.1||CM||^^M30^201406181330^201406181400^R^^^^||201406181103|^Boucher^Lori^^^||S1276702B^Klein^Wesley^^MD^||508-771-9599|201406181330||79^Wilkens OP Medical Complex|10^Reported (final)||
+OBR|1|2297653.1|2297653.1|262^Knee (C-) CPT 73721^L^MRC40713^AE_Title^L|R^Outpatient - Routine|201406181103|201406181330|201406181400||244640^1609193366|||rt knee pain^||MSK^Right|S1276702B^Klein^Wesley^^MD^|508-771-9599|||26138230&^^^Wilkens OP Medical Complex&79&L^^Wilkens OP Medical Complex&79&L||||MR|F||^^M30^201406181330^201406181400^R^^^^|||I|Non-Contrast Exam^^rt knee pain|014776^Gagnon^Paul^^DO^|150666^^DO^|||201406181330||||||||
+OBX|1|FT|2325211^InterpNo^L|1|                        WILKENS OP MEDICAL COMPLEX||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|2|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|3|ACCESSION NUMBER      : 2297653.1||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|4|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|5|PATIENT NAME          : Saccocia, Nicholas L||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|6|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|7|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|8|MEDICAL RECORD NUMBER : 2297653||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|9|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|10|DATE OF BIRTH         : 09/21/1975||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|11|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|12|DATE OF EXAM          : 06/18/2014||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|13|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|14|REFERRING PHYSICIAN   : KLEIN, WESLEY||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|15|                        Duffy Health Center||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|16|                        94 Main Street||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|17|                        Hyannis, MA 02601||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|18|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|19|RESULTS PREFERENCE    : Reports via Fax to 508-771-1986.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|20|                        Images on None (report only) via None (report ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|21|only).||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|22|                        Secure access to reports and images at||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|23|                        WWW.SHIELDS.COM for medical professionals.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|24|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|25|EXAM                  : MR - KNEE (C-) CPT 73721 - RIGHT||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|26|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|27|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|28|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|29|Final Report||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|30|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|31|4870159||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|32|** FINAL **||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|33|Reason: RT KNEE PAIN||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|34|EXAM# DEPT/EXAM EXAM DATE  TIME||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|35|4870159 WMR - MRI Knee without Contrast, Right 06/18/2014   14:17||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|36|RESULT:   Routine multiplanar MRI examination of the right knee was ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|37|performed. It is noted that a flex coil was substituted for the knee ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|38|coil ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|39|due to patient's body habitus.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|40|Anterior and posterior cruciate ligaments and medial and lateral ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|41|collateral ligaments appear intact and unremarkable as does the ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|42|patellar ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|43|tendon and the distal quadriceps tendon is intact.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|44|Juxta-articular bony hypertrophic changes of all 3 compartments are ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|45|demonstrated. There is thinning and irregularity of articular ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|46|cartilage ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|47|in the medial and lateral compartments especially advanced at the ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|48|medial ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|49|compartment with significant medial joint space narrowing. ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|50|Subcortical T2 ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|51|signal hyperintensity is demonstrated within the medial femoral ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|52|condyle ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|53|medial tibial plateau consistent with subcortical cystic changes and ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|54|fibrovascular changes related to degenerative joint disease. There is ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|55|interosseous synovial cyst in the lateral tibial plateau measuring 9 ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|56|mm. ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|57|Heterogeneity of cartilage is noted at the patellofemoral joint and ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|58|thinning and irregularity of articular cartilage over the trochlear ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|59|portion of the distal femur.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|60|Signal abnormality is a demonstrated throughout mediolateral menisci ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|61|suggesting degenerative changes. The lateral meniscus appears intact. ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|62|There is mild subluxation of the body of the medial meniscus . The ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|63|posterior horn the medial meniscus appears diminutive and especially ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|64|near ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|65|the meniscal root with signal abnormality suggesting chronic ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|66|degenerative ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|67|tear and maceration. There is question of partial tear of the ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|68|posterior ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|69|root of the medial meniscus.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|70|Signal abnormalities throughout the subcutaneous fat diffusely ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|71|suggest ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|72|nonspecific edema. Prominent subcutaneous varicosities are ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|73|demonstrated ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|74|at the medial aspect of the knee and distal thigh.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|75|IMPRESSION:   1. Tricompartmental degenerative joint disease||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|76|2. Degenerative changes of the menisci, suspicion of partial tear of ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|77|the ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|78|posterior root of the medial meniscus and abnormal appearance the ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|79|posterior horn medial meniscus suggesting chronic degenerative tear ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|80|and ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|81|maceration.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|82|3. Mild joint effusion||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|83|4. Nonspecific subcutaneous edema suspected throughout the lower ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|84|extremity and venous varicosities suggesting venous insufficiency.||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|85|Read by:  PAUL GAGNON  002134 on Jun 18 2014  2:46P||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|86|                                                                      ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|87|    ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|88|Transcribed by: PSC on Jun 18 2014  2:46P||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|89|                                                                      ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|90|    ||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|91|Signed by:  DR. PAUL GAGNON on:  Jun 18 2014  2:46P||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|92|-----||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|93|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|94|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|95|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|96|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|97|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|98|||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|99|PHYSICIAN             :  GAGNON, PAUL DO||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|100|                        (Signature on file)||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|101|                        06/18/2014||||||F|||^201406181447||014776^Gagnon^Paul||
+OBX|1|FT|2325211^InterpNo^L|102|||||||F|||^201406181447||014776^Gagnon^Paul||
